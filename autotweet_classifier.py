@@ -43,6 +43,7 @@ def compare(lines,eva):
       except:
         bla=0
     lscore=sum(scoreli)/len(words)
+    #adjust threshold here
     if lscore>2.8:
       print colored( str(round(lscore))+'\t'+l.encode('utf-8'),'red')
     else:
